@@ -1,0 +1,75 @@
+@import "./variables.scss";
+// @import "../assets/style/general.scss";
+
+// Utili
+.relative {
+    position: relative;
+}
+
+.active {
+    border-bottom: 2px solid $mainBottomBackground;
+}
+// Fine Utili
+
+.header-container {
+    width: 100%;
+    height: 14vh;
+    background-color: $headerBackground;
+    .align-content {
+        display: flex;
+        align-content: center;
+    }
+    #logo {
+        line-height: 14vh;
+
+        img {
+            width: 65%;
+            vertical-align: middle;
+        }
+    }
+
+
+    #links {
+        position: absolute;
+        right: 15%;
+        height: 100%;
+
+        ul {
+            display: flex;
+            height: 100%;
+
+            li {
+                display: inline;
+                line-height: 14vh;
+                height: 100%;
+                margin: 0 2%;
+                text-decoration: none;
+                font-size: 65%;
+                font-weight: bold;
+                
+                a {
+                    text-transform: uppercase;
+                    text-decoration: none;
+                    color: $footerBottomBackground;
+                }
+                &.active, 
+                &:hover {
+                border-bottom: 3px solid $mainBottomBackground;
+                color: $mainBottomBackground;
+                }
+            }
+        }
+    }
+}
+
+.jumbotron-image {
+    width: 100%;
+    height: 38vh;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: top;
+    }
+}

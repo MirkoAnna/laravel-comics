@@ -1,0 +1,13 @@
+@import "./variables.scss";
+
+.footer-top-container {
+    width: 100%;
+    height: 40vh;
+    background-image: url("../../../public/img/footer-bg.jpg");
+}
+
+.footer-bottom-container {
+    width: 100%;
+    height: 13vh;
+    background-color: $footerBottomBackground;
+}
