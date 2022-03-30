@@ -12,7 +12,7 @@
                         <a :href="link.url">{{link.text}}</a>
                     </li> --}}
                     <li><a href="/characters">Characters</a></li>
-                    <li class="active"><a href="/">Comics</a></li>
+                    <li class="{{ Request::route() ->getName() == 'comics' ? 'active' : '' }}"><a href="{{route('comics')}}">Comics</a></li>
                     <li><a href="/movies">Movies</a></li>
                     <li><a href="/tv">Tv</a></li>
                     <li><a href="/games">Games</a></li>

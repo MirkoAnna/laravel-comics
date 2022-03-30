@@ -1,0 +1,14 @@
+@import "./variables.scss";
+@import "./general.scss";
+
+.wrapper-comic {
+    width: 100%;
+    height: calc(65vh + 19vh);
+    border-top: 7vh solid $mainBottomBackground;
+
+    .comic-top {
+        width: 100%;
+        height: calc(77vh / 2);
+        background-color: aliceblue;
+    }
+}

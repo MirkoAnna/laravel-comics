@@ -13,9 +13,9 @@
             
             @if (is_array($comics)) 
 
-            @foreach($comics as $comic)
+            @foreach($comics as $key => $comic)
             <div class="box-series">
-                <a href="{{ $comic['thumb']}}">
+                <a href="{{route('comic', ['comic_id' => $key] )}}">
                     <img src="{{ $comic['thumb'] }}" alt="{{ $comic['title']}}">
                     <p>{{ $comic['series']}}</p>
                 </a>    
