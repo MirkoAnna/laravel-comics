@@ -47,15 +47,25 @@
             <div class="sub-container-info">
                 <div class="comic-info">
     
-                    <div class="talent">
+                    <div class="talents">
                         <h3>Talent</h3>
-                        <div class="talent-text">
-                            
-                            <span>Art by: </span>
-                                
-                            
-                            <span>
-                        </div>
+                            <div class="artists">
+                                <p>Art by: </p>  
+                                    <p>
+                                        @foreach ($comic['artists'] as $artist)
+                                            {{$artist}};
+                                        @endforeach
+                                    </p>
+                            </div>
+                            <div class="writers">
+                                <p>Written by: </p>
+                                <p>
+                                    @foreach ($comic['writers'] as $writer)
+                                        {{$writer}};
+                                    @endforeach
+                                </p>
+                            </div>
+                        
                     </div>
     
                     <div class="specs">

@@ -130,17 +130,43 @@
             height: 80%;
             border-top: 1px solid lightgray;
             border-bottom: 1px solid lightgray;
-
+            
         }
         .comic-info {
             display: flex;
             margin: 0 auto;
             width: 60%;
             height: 90%;
+            
+            h3, .artists, .writers {
+                border-bottom: 1px solid lightgray;
+            }
 
-            .talent, .specs {
+            .talents, .specs {
+                margin: 2% 2%;
                 width: 50%;
                 color: rgb(0, 63, 94);
+
+                h3 {
+                    padding-bottom: 4%;
+                }
+            }
+            .talents {
+                
+                .artists, .writers {
+                    display: flex;
+                    padding: 2%;
+                    p {
+                        font-size: 60%;
+                    }
+                    p:first-child {
+                        width: 40%;
+                    }
+                    p:last-child {
+                        width: 90%;
+                        color: rgb(0, 170, 218);
+                    }
+                }
             }
         }
 

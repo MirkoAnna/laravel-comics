@@ -412,9 +412,43 @@ body {
   height: 90%;
 }
 
-.wrapper-comic .comic-bottom .comic-info .talent,
+.wrapper-comic .comic-bottom .comic-info h3,
+.wrapper-comic .comic-bottom .comic-info .artists,
+.wrapper-comic .comic-bottom .comic-info .writers {
+  border-bottom: 1px solid lightgray;
+}
+
+.wrapper-comic .comic-bottom .comic-info .talents,
 .wrapper-comic .comic-bottom .comic-info .specs {
+  margin: 2% 2%;
   width: 50%;
   color: #003f5e;
+}
+
+.wrapper-comic .comic-bottom .comic-info .talents h3,
+.wrapper-comic .comic-bottom .comic-info .specs h3 {
+  padding-bottom: 4%;
+}
+
+.wrapper-comic .comic-bottom .comic-info .talents .artists,
+.wrapper-comic .comic-bottom .comic-info .talents .writers {
+  display: flex;
+  padding: 2%;
+}
+
+.wrapper-comic .comic-bottom .comic-info .talents .artists p,
+.wrapper-comic .comic-bottom .comic-info .talents .writers p {
+  font-size: 60%;
+}
+
+.wrapper-comic .comic-bottom .comic-info .talents .artists p:first-child,
+.wrapper-comic .comic-bottom .comic-info .talents .writers p:first-child {
+  width: 40%;
+}
+
+.wrapper-comic .comic-bottom .comic-info .talents .artists p:last-child,
+.wrapper-comic .comic-bottom .comic-info .talents .writers p:last-child {
+  width: 90%;
+  color: #00aada;
 }
 
