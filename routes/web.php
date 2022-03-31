@@ -24,6 +24,7 @@ Route::get('/comic/{comic_id}', function ($comic_id) {
 
     $comics = config('comics');
 
+        
     if (is_numeric($comic_id) && $comic_id >= 0 && $comic_id < count($comics)) {
 
         $comicObject = $comics[$comic_id];
